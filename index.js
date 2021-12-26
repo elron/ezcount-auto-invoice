@@ -11,8 +11,8 @@ async function main() {
       type: 400,
       customer_name: "מר חשבונית עוקבת",
       customer_email: "elron100duck@gmail.com",
-      auto_balance: true,
-      forceItemsIntoNonItemsDocument: true,
+      auto_balance: true, // important
+      forceItemsIntoNonItemsDocument: true, // important
       item: [
         {
           catalog_number: "MKT1",
@@ -31,9 +31,9 @@ async function main() {
           cc_deal_type: 2,
           cc_num_of_payments: 5,
           cc_payment_num: 1,
-          auto_calc_payments: true,
-          // auto_invoice_status: true,
-          // auto_invoice_description: "item for invoice"
+          auto_calc_payments: true, // important
+          auto_invoice_status: true, // important
+          auto_invoice_description: "item for invoice" // important
         },
       ],
       price_total: 1000,
